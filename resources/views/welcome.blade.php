@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Company
+                    {{__('auth.company')}}
                 </div>
 
                 <div class="links">
