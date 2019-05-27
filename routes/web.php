@@ -19,3 +19,7 @@ Route::get('user/profile', 'UserProfileController@index')->name('user.profile');
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/config','AppController@getAdminPage')->name('config')->middleware('roles:Admin|Author');//
+
+Route::post('/config/assign-roles','AppController@postAdminAssingRoles')->name('config.assign');
